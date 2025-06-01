@@ -1,2 +1,49 @@
 .idea
 .qodo
+# === Java build artifacts ===
+**/target/
+**/out/
+*.class
+
+# === Maven ===
+.mvn/wrapper/maven-wrapper.jar  # Optional: ignore the wrapper jar only if you prefer not to version binaries
+log/
+*.log
+
+# === IntelliJ IDEA ===
+.idea/
+*.iml
+
+# === Eclipse (if someone uses it) ===
+.project
+.classpath
+.settings/
+
+# === VS Code (if used) ===
+.vscode/
+
+# === OS-generated files ===
+.DS_Store
+Thumbs.db
+
+# === Environment-specific ===
+.env
+*.env
+
+# === Logs and temporary files ===
+*.tmp
+*.bak
+*.swp
+
+# === Docker-related ===
+**/.docker/
+**/docker-compose.override.yml
+*.pid
+
+# === Node (if you have frontend microservices) ===
+node_modules/
+dist/
+build/
+
+# === Git merge conflict files ===
+*.orig

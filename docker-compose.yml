@@ -14,7 +14,6 @@ services:
       - microservices-net
     restart: unless-stopped
 
-
   pgadmin:
     container_name: ms_pgadmin
     image: dpage/pgadmin4

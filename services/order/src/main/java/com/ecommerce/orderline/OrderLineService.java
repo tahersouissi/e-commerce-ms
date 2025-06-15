@@ -1,4 +1,4 @@
-package comgit .ecommerce.orderline;
+package com.ecommerce.orderline;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

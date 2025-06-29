@@ -3,3 +3,34 @@ spring:
     import: optional:configserver:http://localhost:8888
   application:
     name: order-service
+  kafka:
+    bootstrap-servers: localhost:9092
+  eureka:
+    client:
+      service-url:
+        defaultZone: http://localhost:8761/eureka/
+      register-with-eureka: true
+      fetch-registry: true
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/order
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+application:
+  config:
+    customer-url: http://customer-service:8081
+    payment-url: http://payment-service:8082
+    product-url: http://localhost:8082
+
+server:
+    port: 8084

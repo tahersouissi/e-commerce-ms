@@ -34,3 +34,9 @@ application:
 
 server:
     port: 8084
+
+logging:
+  level:
+    root: DEBUG
+    org.springframework: DEBUG
+    com.ecommerce: DEBUG

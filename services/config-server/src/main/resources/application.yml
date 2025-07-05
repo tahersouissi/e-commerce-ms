@@ -8,6 +8,8 @@ spring:
       server:
         native:
           search-locations: classpath:/configurations
-
+  neo4j:
+    pool:
+      idle-time-before-connection-test:
 server:
   port: 8888
